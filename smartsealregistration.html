@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <style>
+    .footerbox {
+      position: absolute;
+      bottom: 0px;
+      float: left;
+      color: white;
+
+    }
+
+    body,html {
+      background-color: #283d3b;
+      background: linear-gradient(#283d3b, black);
+      height: 100%;
+      color: white;
+      font-family: 'Raleway', sans-serif
+    }
+
+    h1 {
+      letter-spacing: 3px;
+    }
+
+
+    p {
+      color: white;
+    }
+
+    A {
+      text-decoration: none;
+    }
+
+    .form-group {
+      color: white;
+    }
+
+    form {
+      float: left;
+      text-align: left;
+    }
+
+    button {
+      border-radius: 10px;
+      background-color: #00a896;
+      padding: 10px;
+      width: 100px;
+      height: 50px;
+      text-align: center;
+    }
+
+    label {
+      display: inline-block;
+      float: center left;
+      clear: left;
+      width: 150px;
+      text-align: left;
+      background-color: #141e1d;
+      font-size: large;
+    }
+
+    input {
+      display: inline-block;
+      float: center left;
+      text-align: left;
+      width: 300px;
+      height: 30px;
+    }
+
+    a {
+      color: #00a896;
+      line-height: 2;
+    }
+
+    span {
+      color: white;
+      line-height: 2;
+    }
+  </style>
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Seal Registration</title>
+</head>
+
+
+<body>
+  <div class="col-12 col-md-4 peer pX-40 pY-80 h-100 bgc-white scrollable pos-r style=" min-width: 320px;">
+
+    <h3 class="fw-300 c-grey-900 mB-40">
+      <a target="_blank" rel="noopener noreferrer"
+        href="https://appseed.us/admin-dashboards/django-dashboard-adminator"> </a>
+    </h3>
+
+
+    <h1>
+      <b>
+
+        Register
+        <img src=https://smartseal.io/images/logos/logo-accent.png width=40 height="40" alt="logo image"
+          style="vertical-align: middle;">
+
+      </b>
+
+    </h1>
+
+
+    <form method="post" action="">
+
+      <input type="hidden" name="csrfmiddlewaretoken"
+        value="MMBXHaQNtd7c02QwOjm5AIguqaq8xkFcmzh6NjpsJ4LnAGrNGKltRBi4GfETCqkV">
+      <p>
+      <div class="form-group">
+        <label class="text-normal text-dark">Username</label>
+        <input type="text" name="username" placeholder="Username" class="form-control" autofocus="" required=""
+          id="id_username">
+      </div>
+      </p>
+      <p>
+      <div class="form-group">
+        <label class="text-normal text-dark">Email</label>
+        <input type="Email" name="Email" placeholder="Email" class="form-control" required="" id="id_email">
+      </div>
+      </p>
+
+      <p>
+      <div class="form-group">
+        <label class="text-normal text-dark">Password</label>
+        <input type="password" name="password1" placeholder="Password" class="form-control" required=""
+          id="id_password1">
+      </div>
+      </p>
+
+      <p>
+      <div class="form-group">
+        <label class="text-normal text-dark">Confirm Password</label>
+        <input type="password" name="password1" placeholder="Re-enter password" class="form-control" required=""
+          id="id_password1">
+      </div>
+      </p>
+
+      <p>
+
+      <div class="form-group">
+        <button type="submit" name="register" class="btn btn-primary">Register</button>
+
+
+        &nbsp; &nbsp;
+        <span class="text-small font-weight-semibold">Have and account?</span>
+        <a href="/login/" class="text-black text-small">Login</a>
+
+      </div>
+
+      </p>
+
+
+  </div>
+  </form>
+
+  <footer>
+    <div class="footerbox">
+      Copyright &copy; 2020-
+      <script>document.write(new Date().getFullYear())</script> Smart Seal Inc. All Rights Reserved
+    </div>
+  </footer>
+
+
+</body>
+
+
+
+</html>
