@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>smartseal Tag Programmer</title>
+</head>
+<style>
+  h1{text-shadow: 2px 2px #a8a6a6}
+    h2{
+      color:#2b558d
+    }
+   
+
+  form{border-width:205px;
+  border:2px solid rgb(206, 202, 202);
+  background: linear-gradient(rgb(125, 126, 125), black);
+  padding: 50px;
+  border-radius:10%;
+  margin:50px 500px;
+  border-style:outset 10px;}
+  
+  
+
+ 
+  
+  
+body {
+    background-color:white ;
+    margin:50px 0px; padding:0px;
+    text-align:center;
+    vertical-align: top;
+ 
+    }
+    
+img.transparent {
+    background: white url("chrome://global/skin/media/imagedoc-lightnoise.png");
+    
+}
+.shrinkToFit {
+    cursor: zoom-in;
+}
+img {
+    image-orientation: from-image;
+   
+}
+    label {
+      display: inline-block;
+      clear: left;
+      width: 200px;
+      text-align: left;
+      background-color:rgb(95, 93, 93) ;
+    background:linear-gradient black;
+      font-size: large;
+    }
+
+    input {
+     display-typoinline-inline-block;
+      text-align: left;
+      width: 300px;
+      height: 20px;
+    }
+     .form-group label{
+     text-align:left;
+      background-color:transparent;
+      color:white;
+      font-size: large;
+      width: 320px;
+      height: 25px;
+      
+      
+     
+      }
+      form input {
+         display: inline-block;
+         margin-right: 9px;
+        
+      }
+      .form-group * {
+  vertical-align: top;
+  color:black;
+
+}
+button{
+      border-radius: 10px;
+      background-color:rgb(13, 160, 140);
+      color:black;
+      padding: 0 10px;
+      width: 100px;
+      height: 50px;
+      text-align: center;
+     
+    
+  
+    }
+    button:hover{
+     background:rgb(55, 240, 240);
+     color:black;
+     
+ 
+} 
+     
+
+     
+    
+
+</style>
+<head><link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet"></head>
+<body>
+  <img src="https://staging.smartseal.io/static/logos/Accent_Smart%20Seal_Guilloche_Color.png" alt="https://staging.smartseal.io/static/logos/Accent_Smart%20Seal_Guilloche_Color.png" class="shrinkToFit transparent" width="465" height="465">
+    <h1>SmartSeal Tag Programmer</h1>
+    <h2>Please fill out the required text fields</h2>
+   
+   <p> <b>Desired URL:dev1.smartseal.io/demo/ </b></p>
+   
+   <form method="post" action="">
+       <p>
+        <div class="form-group">
+        <label for ="Batch Number">Batch Number</label> <br>
+       <input id= "Batch Number" type="text" >
+       </div>
+       </p>
+       <p>
+        <div class="form-group">
+        <label for ="Tag Quantity">Tag Quantity</label> <br>
+       <input id= "Tag Quantity" type="text" >
+       </div>
+       </p>
+       <p>
+        <div class="form-group">
+        <label for ="Tag Scan Limit"> Tag Scan Limit</label> <br>
+         <input id= "Tag Scan Limit " type="text" >
+         </div>
+       </p>
+       <p>
+        <div class="form-group">
+        <label for ="Product Series"> Product Series</label> <br>
+       <input id= "Product Series " type="text" >
+       </div>
+       </p>
+       <p>
+        <div class="form-group">
+        <label for ="Active Date"> Active Date</label> <br>
+       <input id= "Active Date" input type="date" data-date-inline-picker="true" placeholder="Active Date">
+       </div>
+       </p>
+       <p>
+        <div class="form-group">
+        <label for ="Tag Expiration Date"> Expiration Date</label> <br>
+       <input id= "Expiration Date" input type="date" data-date-inline-picker="true" placeholder="Expiration Date">
+       </div>
+       </p>
+       <p>
+        <div class="form-group">
+        <label for ="Prod Exp. Date"> Product Exp. Date</label> <br>
+       <input id= "Prod Exp. Date" input type="date" data-date-inline-picker="true" placeholder="Product Expiration Date">
+       </div>
+       </p>
+       <p>
+        <div class="form-group">
+        <label for ="Comments"> Comments</label> <br>
+        <textarea id="comments" cols="42"rows="15" >
+        </textarea>
+        </div>
+        
+        </p>
+        <p>
+          <div class="form-group">
+          <label for ="Description"> Description</label> <br>
+          <textarea id="Description" cols="42"rows="15" >
+          </textarea>
+          </div>
+          
+          </p>
+          <p>
+            <div class="form-group">
+              <label for="Username">Username</label> <br>
+              <input type="text" name="username" class="form-control" autofocus="" required=""
+                id="Username">
+            </div>
+            </p>
+            <p>
+              <div class="form-group">
+                <label for="Password">Password</label> <br>
+                <input type="Password" name="Password"  class="form-control" required=""
+                  id="Password">
+              </div>
+              </p>
+              <br/>
+              <p>
+                <div class="form-group">
+                <label for="NTAG">Tag Part Number</label> <br>
+                <select name="NFC Part" id="NFC Part" style="width: 320px">
+                        <option value="NTAG 424 DNA">NTAG 424 DNA</option>
+                        <option value="NTAG 424 DNA TT">NTAG 424 DNA TT</option>
+                        </select>
+                        </div>
+                      </p>
+                      <br/>
+                      <p>
+                        <span class="button1">
+                      <button id="Submit" type="button"><b>Submit</b></button>
+                     </span>
+                    </p>
+                   
+                      
+   </form>
+
+
+
+
